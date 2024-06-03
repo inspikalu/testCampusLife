@@ -1,0 +1,27 @@
+  <View style={lodgeCardStyles.card}>
+      <View style={{ position: "relative" }}>
+        <TouchableOpacity onPress={() => setLiked(!liked)} style={lodgeCardStyles.likeButton}>
+          <HeartIcon fill={liked ? "red" : "#ffffff30"} style={{}} />
+        </TouchableOpacity>
+        <Image style={lodgeCardStyles.cardImage} source={require("../assets/images/lodge-6.jpg")} resizeMode="stretch" />
+        {/* <Image style={lodgeCardStyles.cardImage} source={photo} resizeMode="stretch" ></Image> */}
+      </View>
+      <View style={lodgeCardStyles.cardBody}>
+        <View style={{ gap: 0 }}>
+          <View>
+            <Text style={{ fontWeight: "700", fontSize: 16 }}>{name}</Text>
+          </View>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 2 }}>
+            <LocationIcon stroke={"black"} />
+            <Text style={{ fontWeight: "400", fontSize: 16 }}>{location}</Text>
+          </View>
+          <View>
+            <Text style={{ fontWeight: "700", fontSize: 16 }}>N{price}</Text>
+          </View>
+        </View>
+
+        <Pressable android_ripple={{ color: "#ffffff30", borderless: false, radius: 400 }} style={lodgeCardStyles.cardButton}>
+          <Text style={{ color: "#fff", fontSize: 18, fontWeight: "600" }}>Details</Text>
+        </Pressable>
+      </View>
+    </View>
