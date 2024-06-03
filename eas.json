@@ -9,7 +9,8 @@
     },
     "preview": { // Preview build settings (optional)
       "android": {
-        "buildType": "apk" // Build type for Android (apk or bundle)
+        "buildType": "apk", // Build type for Android (apk or bundle)
+  "image": "latest"
       }
     },
     "production": { // Production build settings (optional)
