@@ -1,0 +1,19 @@
+{
+  "cli": {
+    "version": ">= 2.6.0" // Minimum required EAS CLI version
+  },
+  "build": { // Build configurations
+    "development": { // Development build settings
+      "developmentClient": true, // Enable development client
+      "distribution": "internal" // Distribution type (internal or external)
+    },
+    "preview": { // Preview build settings (optional)
+      "android": {
+        "buildType": "apk" // Build type for Android (apk or bundle)
+      }
+    },
+    "production": { // Production build settings (optional)
+      // Add production-specific configurations here
+    }
+  }
+}
